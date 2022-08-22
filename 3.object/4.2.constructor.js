@@ -40,7 +40,7 @@ function Food(name) {
 }
 
 function Mom() {
-    this.cook = foonName => new Food(foodName)
+    this.cook = foodName => new Food(foodName)
 }
 
 function Child() {
@@ -50,4 +50,4 @@ function Child() {
 const mom = new Mom()
 const child = new Child()
 
-console.log(child.eat(mom.cook('짜장면')))
+child.eat(mom.cook('짜장면'))
