@@ -35,3 +35,4 @@ let duck2 =  new Duck('duck2')
 console.log(duck2.__proto__ == duck.__proto__)
 
 let duck3 = new duck.__proto__.constructor('duck')
+duck3 = new duck.constructor('duck')

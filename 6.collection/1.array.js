@@ -89,3 +89,61 @@ for(let i = 0; i < arr.length; i++)
 for(let key in arr) console.log(arr[key])
 
 for(let val of arr) console.log(val)
+
+//
+function print(e) {
+    console.log(e)
+}
+
+function print2(e, i) {
+    console.log(`[${i}]: ${e}`)
+}
+
+function print3(e, i, arr) {
+    arr[i] = e.toUpperCase()
+}
+
+arr = ['a', 'b']
+
+arr.forEach(print)
+
+arr.forEach(print2)
+console.log(arr)
+
+arr.forEach(print3)
+
+//
+arr = [1, 2, 3]
+let arr2 = arr.map(e => e * 2)
+console.log(arr, arr2)
+
+//
+let group = {
+    title: 'art',
+    students: ['winston', 'cal', 'maritha'],
+    list() {
+        this.students.forEach(studentName =>
+            console.log(this.title, ':', studentName))
+    }
+}
+
+group.list()
+
+//
+arr = ['hello', 'world', 2]
+let greeting = arr.join()
+console.log(greeting)
+console.log(typeof greeting)
+
+console.log(arr.join('/'))
+//과제 join()에서 'helloworld2'를 return하라.
+console.log(arr.join(''))
+
+//
+arr = [1, 2, 3]
+str = arr.toString()
+console.log(str, '/', typeof str)
+
+//
+str = JSON.stringify(arr)
+console.log(str, '/', typeof str)

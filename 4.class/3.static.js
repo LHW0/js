@@ -54,8 +54,7 @@ console.log(Object.keys(article1))
 let articles = [article1, article2]
 console.log(articles)
 
-articles.sort(Article.compare) //sort는 오름차순
-console.log(articles)
+articles.sort(Article.compare) // a - b 오름차순
 Article.compare = (a, b) => b - a
-articles.sort(Article.compare)
+articles.sort(Article.compare) // b-a 내림차순
 console.log(articles)

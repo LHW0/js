@@ -12,7 +12,7 @@ const greet = () => console.log('hello')
 greet()
 
 //
-add = (a, b) => { //파라미터 2개이상이면 블럭{}을 써야함
+add = (a, b) => { //파라미터 2개이상이면 블럭{}을 써야함????
     const result = a + b
     return result
 }

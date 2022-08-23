@@ -20,7 +20,7 @@ let user2 = {
 
 console.log(`${user}`)
 console.log(user > user2)
-console.log(user + 50)
+console.log(user + 50) //hint는 default
 console.log(user2 + 50)
 
 //
@@ -44,3 +44,7 @@ console.log(user + 100)
 userStr = JSON.stringify(user)
 console.log(userStr)
 console.log(typeof userStr)
+
+serializing
+
+deserialzing

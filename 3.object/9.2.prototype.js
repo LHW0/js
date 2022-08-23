@@ -28,5 +28,5 @@ console.log(one.toString())
 //
 function User() {}
 let user = User()
-//console.log(user.toString())
+console.log(user.toString())
 console.log(obj.toString())

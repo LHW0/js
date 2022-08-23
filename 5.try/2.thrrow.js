@@ -12,4 +12,4 @@ try {
     if(e instanceof SyntaxError)
         console.log('ERROR: ' + e.message)
     else throw e
-}
+} //ERROR: user.name이 없습니다
